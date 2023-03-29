@@ -1,38 +1,170 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+.videoTag {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intro {
   text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 600px) {
+  .videoTag {
+    width: 100%;
+    height: 56.25vw;
+    object-fit: cover;
   }
+  
+  .intro {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .top-speed {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 0;
+    
+  }
+  
+  .top-speed :nth-child(2) {
+    position: static;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left:0px
+   }
+
+   .Porsches{
+    flex-direction: column;
+    margin-bottom: 6rem;
+   }
+
+   .top-speed {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 0;
+    width: auto; /* remove fixed width */
+    
+  }
+  
+  .top-speed h1 {
+    position: absolute; /* remove absolute positioning */
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    top: 0;
+    
+   }
+   
+   .top-speed img {
+     max-width: 100%; /* prevent image from overflowing container */
+   }
+
+   .intro {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    
+  }
+  
+  #brand-name {
+    font-size: 1.5rem;
+  }
+
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.intro {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+
+
+@font-face {
+  font-family: "911 Porscha";
+  src: url("./fonts/911porschav3.ttf") format("truetype");
+}
+
+#brand-name {
+  font-family: "911 Porscha";
+}
+
+.top-speed {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: left;
+  word-wrap: break-word;
+  width: 600px;
+  font-size: 1.7rem;
+  position: relative;
+}
+
+body {
+   overflow-x:hidden
+}
+
+
+
+.top-speed > h1{
+  position: absolute;
+  text-align: left;
+  left: 2rem;
+  top: 4rem;
+
+}
+
+.test{
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+}
+
+.Porsches{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 12rem;
+  font-weight: bold;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.top-speed {
+  display: flex;
+  text-align: left;
+  word-wrap: break-word;
+  width: 600px;
+  font-size: 1.7rem;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top-speed > h1{
+  position: absolute;
+  text-align: left;
+  left: 2rem;
+  top: 4rem;
+
 }
